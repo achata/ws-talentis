@@ -30,3 +30,18 @@ body {
 .text-redTalentis{
   color: var(--redTalentis);
 }
+.dropdown-menu{
+  border:none;
+  box-shadow: 1px 3px 5px 1px #d4d4d45e;
+  border-radius: .8rem;
+}
+.dropdown-menu::before{
+  content: '';
+  position: absolute;
+  top: -.8rem;
+  left: 1rem;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+
+}
