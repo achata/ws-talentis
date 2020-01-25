@@ -1,0 +1,11 @@
+.bg-footer{
+    background-color: var(--redTalentis);
+}
+.bg-transparente{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+#footer ul li a:hover{
+    color:white !important;
+    cursor: pointer;
+}

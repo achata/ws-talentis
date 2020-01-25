@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicial</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--MdBootstrap-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../css/fontawesome-all.css">
+    <!-- Bootstrap core CSS -->
+    <!--use my bootstrap up-->
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdbootstrap.min.css" rel="stylesheet">
+    <!--Swiper-->
+    <link rel="stylesheet" href="../css/swiper.min.css">
+
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/inicio.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <style>
+        .marcar{
+            border: 2px solid black;
+        }   
+        #areasCurriculares > div > .row:nth-child(2n+1) > div:nth-child(1){
+            background-color: #fad67d;
+            color: white;
+        }
+        #areasCurriculares > div > .row > div:nth-child(1){
+            background-color: var(--yellowTalentis);
+            color: white;
+        }
+        #areasCurriculares > div > .row > div:nth-child(2){
+            border-bottom: 2px solid var(--yellowTalentis);
+        }
+        #areasCurriculares > div > .row > div{
+            padding: 1rem;
+        }
+        #listaTalleres > .list-group-item{
+            background-color: rgba(0, 0, 0, 0) !important;
+            border: none !important;
+        }
+        #listaTalleres > li > a{
+            font-size: 40px;
+            color: rgb(223, 225, 230);
+            font-weight: 700 !important;
+        }
+        #listaTalleres > li > a:hover{
+            color: var(--yellowTalentis) !important;
+            cursor: pointer;
+            border-bottom: 4px solid var(--yellowTalentis);
+        }
+        .tallerActivo {
+            color: var(--yellowTalentis) !important;
+            cursor: pointer;
+            border-bottom: 4px solid var(--yellowTalentis);
+        }
+
+        .logNGb::before {
+            position: absolute;
+            content: "";
+            display: block;
+            z-index: 10000;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            background: linear-gradient(rgba(24, 27, 50, 0) 43.23%, rgba(24, 27, 50, 0.5) 100%), linear-gradient(0deg, rgba(24, 27, 50, 0.05), rgba(24, 27, 50, 0.05));
+        }
+    </style>
+
+<style>
+    .box-crr{
+        position: relative;
+        width: 320px;
+        height: 290px;
+        background-color: var(--yellowTalentis);
+        color: #fff;
+        padding: 1rem 6rem 1rem 1rem;   
+    }
+    .box-crr-link{
+        position: absolute;
+        font-weight: bold;
+        color: #fff !important;
+        bottom: 1rem;
+    }
+    .box-crr-link:hover{
+        border-bottom: 2px solid #fff;
+    }
+    .imgTaller1:after,.imgTaller2:after,.imgTaller3:after,.imgTaller4:after,.imgTaller5:after{
+        content: '';
+        position: absolute;
+        top: 3rem;
+        left: 80%;
+        width: 280px;
+        height: 300px;
+        background-color: #fff;
+        background-position: center;
+        background-size: cover;
+
+        animation: 0.4s ease-in 0s 1 normal none running eMLfYp;
+    }
+
+    @keyframes eMLfYp {
+        0% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        60% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .imgTaller1:after{
+        background-image: url(https://www.codigo.pe/wp-content/uploads/2016/08/14060197_10209456702750372_1813192755_o-11.jpg);
+    }
+    .imgTaller2:after{
+        background-image: url('../assets/WEB/Talleres/ballet.jpg');
+    }
+    .imgTaller3:after{
+        background-image: url(https://oc2.ocstatic.com/images/logo_small.png);
+    }
+    .imgTaller4:after{
+        background-image: url('../assets/WEB/Talleres/tkd.jpg');
+    }
+    .imgTaller5:after{
+        background-image: url('../assets/WEB/Talleres/minichef.jpg');
+    }
+</style>
+</head>
+<body>
+    <nav id="navbar" style="height: 100px" class="navbar fixed-top p-0 navbar-expand-lg bg-white shadow">
+        <div class="container m-auto">
+            <a style="flex-grow:0;" class="navbar-brand p-0 " href="https://www.albertoachata.cf">
+                <img src="../image/logo-default.webp" width="150" alt="">
+            </a>
+            <button id="btn-nav" class="navbar-toggler boton_blanco" type="button">
+                <span id="btn-div-span" class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarNav" style="flex-grow:0;">
+                <ul class="navbar-nav">
+                    <li class="nav-item ml-2"><a href="../index.html" class="nav-link nav-section">Inicio</a></li>
+                    <li class="nav-item ml-2 btn-pulsar"><a href="../nosotros.html" class="nav-link nav-section">Nosotros</a></li>
+                    <li class="nav-item ml-2 dropdown drop1">
+                        <a href="nuevos.html" class="nav-link nav-section pt-0">
+                            <a href="#" class="px-2" data-toggle="dropdown">Admision</a>
+                            <ul class="dropdown-menu drop-menu1">
+                              <li><a href="nuevos.html"><i class="fas fa-caret-right mx-2"></i>Nuevos</a></li>
+                              <li><a href="regulares.html"><i class="fas fa-caret-right mx-2"></i>Regulares</a></li>
+                              <li><a href="traslados.html"><i class="fas fa-caret-right mx-2"></i>Traslados</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-item ml-2 dropdown drop2">
+                        <a href="#section3" class="nav-link nav-section pt-0">
+                            <a href="#" class="px-2" data-toggle="dropdown">Niveles</a>
+                            <ul class="dropdown-menu drop-menu2">
+                                <li><a href="inicial.html"><i class="fas fa-caret-right mx-2"></i>Inicial</a></li>
+                                <li><a href="primaria.html"><i class="fas fa-caret-right mx-2"></i>Primaria</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="nav-item ml-2"><a href="#section4" class="nav-link nav-section">Contacto</a></li>
+                    <li class="nav-item ml-2"><a href="#section4" class="nav-link nav-section brochure px-4">VER BROCHURE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="mainInicial" class="marcar" style="margin-top: 100px;">
+        <section class="py-5">
+            <div class="container">
+                <div class="row marcar">
+                    <div class="col-12">  
+                        <img src="../assets/imagen-portada-referencia.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row marcar my-5">
+                    <div class="col-md-6 d-flex">
+                        <img class="m-auto" src="../assets/foto-inicial-referencia1.jpg" width="100%"/>
+                    </div>
+                    <div class="col-md-6 m-auto">
+                        <span class="text-redTalentis font-weight-bold h3 pb-3 d-block">Educación Inicial</span>
+                        <p class="hr-double-personalizado">
+                            Nuestro objetivo principal es la formación integral del niño
+                            en sus tres dimensiones: socioemocional, biopsicomotor e intelectual.
+                            De esta manera, el niño experimenta un aprendizaje significativo y descubre
+                            el mundo que lo rodea mediante experiencias directas.
+                        </p>
+                
+                            <span class="pl-2">HORARIO</span>
+                            <span class="pl-2 py-1 d-block" style="background-color: var(--yellowTalentis);">Lunes a Viernes de 00:00 a.m. a 00:00 p.m.</span>                        
+
+                    </div>
+                </div>
+                <div id="areasCurriculares" class="row marcar my-5">
+                    <div class="col-md-6 m-auto">
+                        <span class="text-redTalentis font-weight-bold h3 pb-3 d-block">Areas curriculares</span>
+                        <div class="row">
+                            <div class="col-md-4 d-flex text-center">
+                                <div class="m-auto">
+                                    Matematicas
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Ejecuta sus capacidades intectuales y razonamiento lógico.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 d-flex text-center">
+                                <div class="m-auto">
+                                    Matematicas
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 d-flex text-center">
+                                <div class="m-auto">
+                                    Matematicas
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 d-flex text-center">
+                                <div class="m-auto">
+                                    Matematicas
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 d-flex text-center">
+                                <div class="m-auto">
+                                    Matematicas
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <img class="m-auto" src="../assets/foto-inicial-referencia2.jpg" width="100%"/>
+                    </div>
+                </div>
+                <div class="row marcar my-5">
+                    <div class="col-md-6 d-flex">
+                        <div class="box-crr my-auto">
+                            <p id="textTalleres">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat repellat.
+                            </p>
+                            <a class="box-crr-link" href="">Explorar taller</a>
+                            <div id="imgTalleres" class="imgTaller1">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-6 m-auto text-right">
+                        <!--<span class="d-inline-block hr-personalizado">Talleres</span><br /><br />-->
+                        <ul id="listaTalleres" class="list-group text-warning">
+                            <li class="list-group-item itemTaller1">
+                                <a href="#" class="tallerActivo">Redes S</a>
+                            </li>
+                            <li class="list-group-item itemTaller2">
+                                <a href="#">Ballet</a>
+                            </li>
+                            <li class="list-group-item itemTaller3">
+                                <a href="#">Psicomotria</a>
+                            </li>
+                            <li class="list-group-item itemTaller4">
+                                <a href="#">Taekwondo</a>
+                            </li>
+                            <li class="list-group-item itemTaller5">
+                                <a href="#">MiniChef</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="bg-footer">
+        <div class="container pt-5">
+            <div class="row text-white">
+                <div class="col-12 col-md-6 col-lg-4 py-3">
+                    <img class="rounded" src="../image/logo-default.png" width="150" alt=""><br/>
+                    <strong class="h5 ml-3 font-weight-bold">ACERCA DE TALENTIS SCHOOL</strong>
+                    <!--<hr class="subLinea mb-2 ml-3"/>-->
+                    <p class="text-white-50 mb-2 ml-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A reiciendis exercitationem dicta quos quaerat delectus voluptates corrupti voluptatem aut maxime? Delectus neque mollitia ipsam fuga quo doloremque distinctio ratione modi!</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 py-3">
+                    <strong class="h5 ml-3 font-weight-bold">NOSOTROS:</strong>
+                    <!--<hr class="subLinea mb-2 ml-3"/>-->
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Visión</a></li>
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Misión</a></li>
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Metodología</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 py-3">
+                    <strong class="h5 ml-3 font-weight-bold">ADMISIÓN:</strong>
+                    <!--<hr class="subLinea mb-2 ml-3"/>-->
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Nuevos</a></li>
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Regulares</a></li>
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Traslados</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 offset-md-6 offset-lg-0 col-lg-2 py-3">
+                    <strong class="h5 ml-3 font-weight-bold">NIVELES:</strong>
+                    <!--<hr class="subLinea mb-2 ml-3"/>-->
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Inicial</a></li>
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Primaria</a></li>
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Talleres</a></li>
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Laboratorios</a></li>
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-angle-double-right mr-2"></i>Horario</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 py-3">
+                    <strong class="h5 ml-3 font-weight-bold">CONTACTO:</strong>
+                    <!--<hr class="subLinea mb-2 ml-3"/>-->
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-phone mr-2"></i>0632541</a></li>
+                        <!--Comentado por estirar la página-->
+                        <!--<li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""> </i>admision@talentis.com</a></li>-->
+                        <li class="list-group-item bg-transparente pb-0 border-0"><a class="text-white-50" href=""><i class="fas fa-map-marked-alt mr-2"></i>Ver mapa...</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row px-5">
+                <div class="col py-2 text-center text-white border-top">
+                    Copyright All right reserved | Talentis School © 2019
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/mdpopper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdbootstrap.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script>
+        $('li.dropdown.drop1').hover(function() {
+            $(this).find('.dropdown-menu.drop-menu1').stop(true, true).delay(200).fadeIn(500);
+        }, function() {
+            $(this).find('.dropdown-menu.drop-menu1').stop(true, true).delay(200).fadeOut(500);
+        });
+        $('li.dropdown.drop2').hover(function() {
+            $(this).find('.dropdown-menu.drop-menu2').stop(true, true).delay(200).fadeIn(500);
+        }, function() {
+            $(this).find('.dropdown-menu.drop-menu2').stop(true, true).delay(200).fadeOut(500);
+        });
+
+        $('.itemTaller1 a').hover(function(){
+            removeActiveClass();
+            $(this).addClass('tallerActivo');
+            $('#textTalleres').text("Taller 1");
+            $('#imgTalleres').removeClass($('#imgTalleres').attr('class'));
+             $('#imgTalleres').addClass('imgTaller1');
+        });
+        $('.itemTaller2 a').hover(function(){
+            removeActiveClass();
+            $(this).addClass('tallerActivo');
+            $('#textTalleres').text("Taller 2");
+            $('#imgTalleres').removeClass($('#imgTalleres').attr('class'));
+             $('#imgTalleres').addClass('imgTaller2');
+        });
+        $('.itemTaller3 a').hover(function(){
+            removeActiveClass();
+            $(this).addClass('tallerActivo');
+            $('#textTalleres').text("Taller 3");
+            $('#imgTalleres').removeClass($('#imgTalleres').attr('class'));
+             $('#imgTalleres').addClass('imgTaller3');
+        });
+        $('.itemTaller4 a').hover(function(){
+            removeActiveClass();
+            $(this).addClass('tallerActivo');
+            $('#textTalleres').text("Taller 4");
+            $('#imgTalleres').removeClass($('#imgTalleres').attr('class'));
+             $('#imgTalleres').addClass('imgTaller4');
+        });
+        $('.itemTaller5 a').hover(function(){
+            removeActiveClass();
+            $(this).addClass('tallerActivo');
+            $('#textTalleres').text("Taller 5");
+            $('#imgTalleres').removeClass($('#imgTalleres').attr('class'));
+             $('#imgTalleres').addClass('imgTaller5');
+        });
+
+        function removeActiveClass(){
+            $('.itemTaller1 a').removeClass('tallerActivo');
+            $('.itemTaller2 a').removeClass('tallerActivo');
+            $('.itemTaller3 a').removeClass('tallerActivo');
+            $('.itemTaller4 a').removeClass('tallerActivo');
+            $('.itemTaller5 a').removeClass('tallerActivo');
+        }
+    </script>
+</body>
+</html>

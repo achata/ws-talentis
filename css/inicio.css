@@ -1,0 +1,130 @@
+
+        .text-admision{
+            color: var(--yellowTalentis);
+            font-weight: bold;
+        }
+        .title-form{
+            color: var(--blueTalentis);
+            font-size: 1.7rem;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        .btn-personalizado{
+            background: var(--blueTalentis);
+            color: white;
+        }
+        .btn-personalizado:hover{
+            color: white;
+        }
+        .title-form-brand{
+            color: var(--blueTalentis);
+            font-size: 2.8rem;
+            font-weight: bold;
+            padding: 0;
+            margin:0;
+        }
+        .form-personalizado .md-form{
+            margin-bottom: 2.7rem !important;
+            margin-top: 2.7rem !important;
+        }
+        .select-personalizado{
+            border-radius: 0;
+            border: 0 !important;
+            border-bottom: 1px solid #ced4da !important;
+            color:#757575 !important;
+            padding-left: 0px !important;
+            margin-bottom: 2.7rem;
+        }
+        .card-header-personalizado{
+            padding: 0 !important;
+            border-bottom: 0 !important;
+        }
+
+        .swiper-container {
+      //width: 100%;
+      //height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: var(--blueTalentis);
+    }
+
+    .swiper-button-next,.swiper-button-prev{
+        background-color: white;
+        padding: 25px;
+        border-radius: 50%;
+    }
+    .swiper-button-prev{
+        background-image: url("../image/angle-left-solid.svg");
+    }
+    .swiper-button-next{
+        background-image: url("../image/angle-right-solid.svg");
+    }
+
+    .subtitulo{
+        font-size: 1.4375rem;
+        color: #202020 !important;
+        font-weight: bold;
+    }
+    .hr-personalizado::after {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 2px;
+        background: var(--yellowTalentis);
+        margin: 10px auto;
+    }
+
+    /*nosotros*/
+    .hr-left-personalizado::after {  
+        display: block;
+        content: "";
+        width: 60px;
+        background: var(--yellowTalentis);
+        margin: 10px 0px;
+        height: 5px;
+    }
+    /*inicial*/
+    .hr-double-personalizado:before{
+        display:block;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: var(--yellowTalentis);
+        margin: 10px auto;
+    }
+    .hr-double-personalizado::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: var(--yellowTalentis);
+        margin: 10px auto;
+    }
+    #mainNosotros{
+        color: var(--darkTalentis);
+    }
+    .text-blueTalentis{
+        color: var(--blueTalentis);
+    }
+    .text-line-h150{
+        line-height: 1.5;
+    }

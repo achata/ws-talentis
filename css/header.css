@@ -1,0 +1,32 @@
+:root{
+  --blueTalentis: #1976D2;
+  --redTalentis: #ff3547;
+  --yellowTalentis: #FBC02D;
+  --darkTalentis: #4b4b4b;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+#navbar a{
+  color: #687480;
+}
+.brochure{
+  color: #fff !important;
+  border: 1px solid #fff;
+  background: var(--blueTalentis);
+  border-radius: 20px;
+}
+.brochure:hover{
+  color: var(--blueTalentis) !important;
+  border: 1px solid var(--blueTalentis);
+  background: white;
+}
+#navbar a:hover{
+  color: var(--blueTalentis);
+}
+
+.text-redTalentis{
+  color: var(--redTalentis);
+}
