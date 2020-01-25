@@ -117,54 +117,56 @@
                             <p class="title-form-brand">Talentis School?</p>
                         </div>
                         <div class="container">
-                            <div class="row form-personalizado">
-                                <div class="col-md-6">
-                                    <div class="md-form">
-                                        <input type="text" id="nombres" name="nombres" class="form-control">
-                                        <label for="nombre">Nombres</label>
+                            <form method="POST" action="shared/mail.php">
+                                <div class="row form-personalizado">
+                                    <div class="col-md-6">
+                                        <div class="md-form">
+                                            <input type="text" id="nombres" name="nombres" class="form-control">
+                                            <label for="nombre">Nombres</label>
+                                        </div>
+                                        <select class="form-control select-personalizado">
+                                            <option>Tipo de documento</option>
+                                            <option>Dni</option>
+                                            <option>Carnet de extranjería</option>
+                                            <option>Pasaporte</option>
+                                            <option>Ruc</option>
+                                        </select>
+                                        <div class="md-form">
+                                            <input type="text" id="correo" name="correo" class="form-control">
+                                            <label for="correo">Correo</label>
+                                        </div>
+                                        <select class="form-control select-personalizado">
+                                            <option>Nivel</option>
+                                            <option value="1">Inicial</option>
+                                            <option value="2">Primaria</option>
+                                        </select>
                                     </div>
-                                    <select class="form-control select-personalizado">
-                                        <option>Tipo de documento</option>
-                                        <option>Dni</option>
-                                        <option>Carnet de extranjería</option>
-                                        <option>Pasaporte</option>
-                                        <option>Ruc</option>
-                                    </select>
-                                    <div class="md-form">
-                                        <input type="text" id="correo" name="correo" class="form-control">
-                                        <label for="correo">Correo</label>
+                                    <div class="col-md-6">
+                                        <div class="md-form">
+                                            <input type="text" id="apellidos" nmae="apellidos" class="form-control">
+                                            <label for="apellidos">Apellidos</label>
+                                        </div>
+                                        <div class="md-form">
+                                            <input type="text" id="numeroDocumento" name="numeroDocumento" class="form-control">
+                                            <label for="numeroDocumento">Numero de documento</label>
+                                        </div>
+                                        <div class="md-form">
+                                            <input type="text" id="telefono" name="telefono" class="form-control">
+                                            <label for="telefono">Teléfono</label>
+                                        </div>
+                                        <select class="browser-default custom-select select-personalizado">
+                                            <option>Sede</option>
+                                            <option>Sede 1</option>
+                                            <option>Sede 2</option>
+                                        </select>
                                     </div>
-                                    <select class="form-control select-personalizado">
-                                        <option>Nivel</option>
-                                        <option value="1">Inicial</option>
-                                        <option value="2">Primaria</option>
-                                    </select>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="md-form">
-                                        <input type="text" id="apellidos" nmae="apellidos" class="form-control">
-                                        <label for="apellidos">Apellidos</label>
+                                <div class="row">
+                                    <div class="col-lg-4 offset-lg-8">
+                                        <button class="btn btn-personalizado btn-block my-4" type="submit">Enviar</button>
                                     </div>
-                                    <div class="md-form">
-                                        <input type="text" id="numeroDocumento" name="numeroDocumento" class="form-control">
-                                        <label for="numeroDocumento">Numero de documento</label>
-                                    </div>
-                                    <div class="md-form">
-                                        <input type="text" id="telefono" name="telefono" class="form-control">
-                                        <label for="telefono">Teléfono</label>
-                                    </div>
-                                    <select class="browser-default custom-select select-personalizado">
-                                        <option>Sede</option>
-                                        <option>Sede 1</option>
-                                        <option>Sede 2</option>
-                                    </select>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4 offset-lg-8">
-                                    <button class="btn btn-personalizado btn-block my-4" type="submit">Enviar</button>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
